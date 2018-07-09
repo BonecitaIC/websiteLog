@@ -11,8 +11,17 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div>TODO write content</div>
-        <a href="saludo.jsp">Saludo</a>
-        <a href="login.jsp">Login</a>
+         <form action="procesolog.jsp" method="post">
+
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Nombre</label>
+                            <input type="text" class="form-control" id="nick" name="nick" placeholder="Nickname">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="pass" name="pass" placeholder="Password">
+                        </div>
+                        <button type="submit" class="btn btn-outline-dark">Login</button>
+                    </form>
     </body>
 </html>
